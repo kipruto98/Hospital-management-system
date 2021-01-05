@@ -32,7 +32,7 @@ public class User extends javax.swing.JFrame {
         try {
             Class.forName("com.mysql.jdbc.Driver");
          
-  con = DriverManager.getConnection("jdbc:mysql://localhost/mfcc", "root", "");
+  con = DriverManager.getConnection("jdbc:mysql://192.168.1.101;3306/mfcc", "root", "12345678m");
         } catch (ClassNotFoundException ex) {
              Logger.getLogger(User.class.getName()).log(Level.SEVERE, null, ex);
              JOptionPane.showMessageDialog(this, ex.getMessage());
