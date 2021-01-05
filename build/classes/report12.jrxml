@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4256c0b5-9e74-4435-a6fa-af809264db24">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM diagnosis UNION all SELECT * from lab]]>
+	</queryString>
+	<field name="patientname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bpressure" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="labrequest" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rx" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lab1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lab2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lab3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lab4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="123" splitType="Stretch">
+			<image>
+				<reportElement x="1" y="0" width="140" height="113" uuid="5b0422f5-4acf-4591-a4ea-b014c7ed8515"/>
+				<imageExpression><![CDATA["coffee.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="141" y="0" width="509" height="38" forecolor="#FF0033" uuid="efedf981-895b-44aa-8cc7-f8f8cf0c90b2"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[       HANNEX MEDICAL CENTRE MOSORIOT]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="141" y="81" width="509" height="32" forecolor="#000000" backcolor="#009999" uuid="4ff47b33-4faa-492d-8357-e7765ed52f3a"/>
+			</frame>
+			<staticText>
+				<reportElement x="191" y="61" width="449" height="20" uuid="3071ea4b-da95-492a-bce0-9541649141ce"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tel: 0720085814/0735015592, Email:hannexmosoo@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="240" y="38" width="343" height="23" forecolor="#333333" uuid="eca33aaf-6cee-4ab1-99ba-4e3bab2a80d6"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Home ground Building next to Malugei Supermarket]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="85" width="223" height="28" uuid="e8e13c66-5bfb-411f-ab70-994707caf323"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PATIENT INFORMATION]]></text>
+			</staticText>
+			<image>
+				<reportElement x="660" y="0" width="140" height="113" uuid="a2fad37a-6f37-4356-95b3-21993506e619"/>
+				<imageExpression><![CDATA["coffee.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="9c7589ae-3c56-4188-bb62-34b29ffc2dc5"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" mode="Opaque" x="0" y="0" width="80" height="15" forecolor="#000000" backcolor="#9999FF" uuid="2bc16bd5-919d-43c0-ae94-46af8af2b3d0"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" mode="Opaque" x="80" y="0" width="80" height="15" forecolor="#000000" backcolor="#9999FF" uuid="cc931be5-90b6-4bd8-a39b-836b4590ad54"/>
+				<text><![CDATA[Pressure]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" mode="Opaque" x="160" y="0" width="80" height="15" forecolor="#000000" backcolor="#9999FF" uuid="2957bfbe-b177-42a5-87e8-c9495d232d01"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" mode="Opaque" x="240" y="0" width="80" height="15" forecolor="#000000" backcolor="#9999FF" uuid="18d487ed-1230-4a05-91ef-8e9981f2ddb8"/>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" mode="Opaque" x="320" y="0" width="80" height="15" forecolor="#000000" backcolor="#9999FF" uuid="c30508e2-ee90-43e7-b584-70993326024c"/>
+				<text><![CDATA[Test 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" mode="Opaque" x="400" y="0" width="80" height="15" forecolor="#000000" backcolor="#9999FF" uuid="4986f201-2067-4dc9-baa3-966d7f8ce2df"/>
+				<text><![CDATA[Rx]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" mode="Opaque" x="480" y="0" width="80" height="15" forecolor="#000000" backcolor="#9999FF" uuid="68b036cf-1ee7-42fc-9fa5-d59b1e5ad7f9"/>
+				<text><![CDATA[Test 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" mode="Opaque" x="560" y="0" width="80" height="15" forecolor="#000000" backcolor="#9999FF" uuid="7f8feca1-68d5-4655-9fc6-9fe123597b13"/>
+				<text><![CDATA[Test 3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" mode="Opaque" x="640" y="0" width="80" height="15" forecolor="#000000" backcolor="#9999FF" uuid="8cf22d87-2797-4f90-a4af-3440a66f9e14"/>
+				<text><![CDATA[Test 4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" mode="Opaque" x="720" y="0" width="80" height="15" forecolor="#000000" backcolor="#9999FF" uuid="8c283fe4-4204-426e-ae90-a52f13b23d29"/>
+				<text><![CDATA[Test 5]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="5fb16df4-7525-431e-9340-e3110346168e"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement style="Detail" x="0" y="0" width="80" height="15" uuid="1b127f8e-baeb-4806-894c-f72b59709df2"/>
+					<textFieldExpression><![CDATA[$F{patientname}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement style="Detail" x="80" y="0" width="80" height="15" uuid="c61dc777-e402-419e-a75d-3b458697531d"/>
+					<textFieldExpression><![CDATA[$F{bpressure}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement style="Detail" x="160" y="0" width="80" height="15" uuid="f854e1d5-c11e-4766-b836-4bdd27d5867d"/>
+					<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement style="Detail" x="240" y="0" width="80" height="15" uuid="5dca0071-4dd0-401d-b451-4b1aa35c3652"/>
+					<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement style="Detail" x="320" y="0" width="80" height="15" uuid="56b2b11e-947d-4c25-833f-d3f28e80f5a8"/>
+					<textFieldExpression><![CDATA[$F{labrequest}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement style="Detail" x="400" y="0" width="80" height="15" uuid="7d94422a-0d66-49c3-8466-0cbd0c74a8fb"/>
+					<textFieldExpression><![CDATA[$F{rx}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement style="Detail" x="480" y="0" width="80" height="15" uuid="8c697aa9-f0e3-4158-8175-afdc140b1774"/>
+					<textFieldExpression><![CDATA[$F{lab1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement style="Detail" x="560" y="0" width="80" height="15" uuid="c3d60fda-c205-4aa2-a201-e7329edbd68f"/>
+					<textFieldExpression><![CDATA[$F{lab2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement style="Detail" x="640" y="0" width="80" height="15" uuid="5020e782-de4f-4ae3-9245-d6638a8d0c34"/>
+					<textFieldExpression><![CDATA[$F{lab3}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement style="Detail" x="720" y="0" width="80" height="15" uuid="7086e148-e802-4916-9131-fcf1b89263ce"/>
+					<textFieldExpression><![CDATA[$F{lab4}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="815ed5d0-42ab-4c2b-a985-e84ec8328e42"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="a51189e5-4fa9-465d-a9cd-6527358f8e72"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="ce68f3a9-e7b1-4735-b1a4-73cd40aef263"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="3eca0b08-048a-4f07-a8bf-b53b7bda835e"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="2d6123ff-f656-4afa-9833-a6b870aac8f0"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

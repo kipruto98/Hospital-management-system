@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="228" pageHeight="596" columnWidth="188" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2a4a87c4-279d-48b8-a706-69d7c3595ea8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM patient INNER JOIN lab ON patient.patientno = lab.channelno]]>
+	</queryString>
+	<field name="patientname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rx" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="193" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="75" width="169" height="20" uuid="14dbe1bf-9297-4f44-bfd3-108cc3f12570"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Family planning and minor surgery]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="155" width="169" height="16" uuid="a6829d3f-37d8-4ac1-ac5e-a40a75a463d1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEL:0720085814/0735015592]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="169" height="20" uuid="9f5e0559-e566-408b-a8db-e1131d4bfadb"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HANNEX MEDICAL CLINIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="171" width="141" height="20" uuid="c74911c4-f240-47a5-b205-17ab1754081e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[hannexmosoo@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="55" width="155" height="20" uuid="84dac512-1b14-4cab-aa1e-7117a0d01b0a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Consultation,laboratory,Dental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="186" height="15" uuid="6e32aad1-5ae9-451f-8d53-997e4d039622"/>
+				<textElement>
+					<font size="8" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[HOME GROUND BUILDING NEXT TO MALUGEI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="95" width="186" height="20" uuid="e0553e91-b7cc-4dcf-ac72-fce32e706b9d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Antenatal clinic,Child Health,Inpatient]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="115" width="186" height="20" uuid="95aa3980-4aa2-4e25-8be0-4dd19af588e5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[& Outpatient services, Maternity ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="135" width="186" height="20" uuid="c1690efd-4982-4ea8-8307-ff2d5b798d63"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[& Ultra-sound services]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="213" splitType="Stretch">
+			<textField>
+				<reportElement x="70" y="0" width="116" height="20" uuid="f45b7a33-0373-4441-a5a3-333a789802c0"/>
+				<textFieldExpression><![CDATA[$F{patientname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="20" width="116" height="20" uuid="2abfd531-6ee2-4170-8201-4e954db82421"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="40" width="116" height="20" uuid="db362e52-f056-4893-9896-c5a3a1d3fc2b"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="60" width="116" height="20" uuid="6eb2974e-ecc2-4437-b137-c58b6eb40c8d"/>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="70" y="80" width="116" height="20" uuid="33d8b8d1-c2aa-4928-a9b6-b5e6b602b20e"/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="70" y="110" width="116" height="20" uuid="78c6622c-fa35-449f-850e-00e6555454cd"/>
+				<textFieldExpression><![CDATA[$F{rx}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="70" height="20" uuid="8fe88772-98c8-4cfb-bf08-c4d1c609d39a"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="70" height="20" uuid="3b302d90-98c5-4745-8f7a-4cf60c644ecb"/>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="70" height="20" uuid="358323d4-a341-4a95-9073-3bd7afda4dd4"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="70" height="20" uuid="7c4a78a5-7001-4c79-911b-f7a329ae2919"/>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="80" width="70" height="20" uuid="40b898d5-f0d8-471c-bbbe-33174abc9610"/>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="110" width="70" height="20" uuid="d25458a5-392c-46ca-8871-f784f3a7ae9c"/>
+				<text><![CDATA[RX]]></text>
+			</staticText>
+			<textField pattern="h.mm.ss a">
+				<reportElement positionType="Float" x="70" y="130" width="116" height="20" uuid="277ed802-b171-410c-88d3-04b85236c843"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="39" y="170" width="102" height="20" uuid="1d96d9a5-2e11-4a41-926f-5021ef24cecd"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Get well soon]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement positionType="Float" x="70" y="150" width="116" height="20" uuid="bd177bcc-7787-4b25-9043-7017fa6bd555"/>
+				<textElement>
+					<font isUnderline="false" isStrikeThrough="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="10"/>
+	</columnHeader>
+	<detail>
+		<band height="13"/>
+	</detail>
+	<columnFooter>
+		<band height="9"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="11"/>
+	</pageFooter>
+	<summary>
+		<band height="11"/>
+	</summary>
+</jasperReport>

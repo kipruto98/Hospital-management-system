@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="226" pageHeight="595" columnWidth="186" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89fa3cdf-c3a7-461f-815e-1a9899ad74d6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="3"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM patient INNER JOIN results ON patient.patientno = results.channelno INNER JOIN pharmacy ON patient.patientno = pharmacy.channelno INNER JOIN sales ON patient.patientno = sales.patientno]]>
+	</queryString>
+	<field name="i" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patientno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patientname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bpressure" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="weight" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="phone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="channelno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="doctorname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="testtype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="testcost" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="labresults" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="results1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="results2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="results3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="results4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="prescription" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="doctorsremarks" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="diseasetype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drugname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drugcode" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sellprice" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drugname1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sellprice1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drugname2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sellprice2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drugname3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sellprice3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bill" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="169" height="20" uuid="0c69605d-10fa-464a-aa09-1dffc6de1030"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HANNEX MEDICAL CLINIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="186" height="15" uuid="ba395c79-926e-4247-aefc-4f98fe837fa0"/>
+				<textElement>
+					<font size="8" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[HOME GROUND BUILDING NEXT TO MALUGEI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="85" width="102" height="16" uuid="f521907a-deaa-4605-8660-8d458f670968"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEL:0720085814]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="101" width="141" height="20" uuid="8936443c-7eec-44b8-950f-a50b2cba900e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[hannexmosoo@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="45" width="155" height="20" uuid="ec3e5208-a560-457c-ad10-9df826453c20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Consultation,laboratory,Dental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="65" width="169" height="20" uuid="47a1159d-f9c4-424f-9c70-68e8e6ceace8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Family planning and minor surgery]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="121" width="186" height="1" uuid="45f7413e-c2b6-4982-907b-2b5052ea0394"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="398" splitType="Stretch">
+			<textField>
+				<reportElement x="69" y="0" width="117" height="20" uuid="13ceb675-3363-4f24-a8c0-dee7342d6af0"/>
+				<textFieldExpression><![CDATA[$F{patientname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="20" width="117" height="20" uuid="bfdfc868-d73e-414b-a501-c57cdeb891ba"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="40" width="117" height="20" uuid="9006c5d5-b91d-48a2-85cf-3f011007f610"/>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="60" width="117" height="20" uuid="1f359585-34ff-4a8c-afc7-0785939ce2d9"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="80" width="117" height="20" uuid="ae59c209-527a-4e44-8c00-d08b4310eb66"/>
+				<textFieldExpression><![CDATA[$F{labresults}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="100" width="117" height="20" uuid="ccd42053-174d-42df-accb-c5798a5867b7"/>
+				<textFieldExpression><![CDATA[$F{results1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="120" width="117" height="20" uuid="59b9fb83-8f33-4758-84ba-ccbe97e353f3"/>
+				<textFieldExpression><![CDATA[$F{results2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="140" width="117" height="20" uuid="593fd2e0-af9f-48b4-b1bc-e2d2f1d57c55"/>
+				<textFieldExpression><![CDATA[$F{results4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="160" width="117" height="20" uuid="fec9d7e5-3f01-4e13-b6ea-8752f4d35eb7"/>
+				<textFieldExpression><![CDATA[$F{prescription}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="180" width="117" height="20" uuid="45ba7a17-8fe2-48b3-b3c5-90e9c233195a"/>
+				<textFieldExpression><![CDATA[$F{diseasetype}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="200" width="117" height="20" uuid="720fa7cd-a3cb-4220-8c7c-8539455f8494"/>
+				<textFieldExpression><![CDATA[$F{drugname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="220" width="117" height="20" uuid="ae6fb1de-3a00-4243-a2f9-ceae55235131"/>
+				<textFieldExpression><![CDATA[$F{drugname1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="240" width="117" height="20" uuid="bebb574c-42f8-4c13-b8f7-45e2c2f7448a"/>
+				<textFieldExpression><![CDATA[$F{drugname2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="260" width="117" height="20" uuid="958f0fc6-db3c-4eef-80d7-f468a9f36b77"/>
+				<textFieldExpression><![CDATA[$F{drugname3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="280" width="117" height="20" uuid="bda71e76-433c-4470-9ce3-b938379a8553"/>
+				<textFieldExpression><![CDATA[$F{bill}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="69" height="20" uuid="8024c2c8-2cc2-47a7-8c2a-e4c9b960db9e"/>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="69" height="20" uuid="f38824d5-65a6-4dce-a4aa-e19301e54a91"/>
+				<text><![CDATA[Age:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="69" height="20" uuid="091f2ca3-887c-4da0-9c35-a374bec59566"/>
+				<text><![CDATA[Gender:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="69" height="20" uuid="4c955c02-af12-49dc-8fd4-5f421da12160"/>
+				<text><![CDATA[ID:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="69" height="20" uuid="924c6a3c-a081-4363-a32d-5c2e5c9b7507"/>
+				<text><![CDATA[Results:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="160" width="69" height="20" uuid="6d3f7462-7a8c-4d38-b914-48ecd416fa16"/>
+				<text><![CDATA[Prescription:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="180" width="69" height="20" uuid="4f6502fc-8920-48b9-87dd-212d76744663"/>
+				<text><![CDATA[Disease type:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="200" width="69" height="20" uuid="d39b7698-65c6-4e9c-9b11-1b2ccc98a47d"/>
+				<text><![CDATA[Drugs:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="280" width="69" height="20" uuid="878b8931-b0ca-4493-b4ca-80522a379474"/>
+				<text><![CDATA[Cost:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="370" width="159" height="17" uuid="b634e1a1-b3b8-4f30-bfe0-2d0ae6c3b7ba"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Thank You. Welcome again]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="46" y="350" width="76" height="20" uuid="f5b40bef-bb14-48c8-83aa-e66dece24b7f"/>
+				<text><![CDATA[Get well soon]]></text>
+			</staticText>
+			<textField pattern="h.mm.ss a">
+				<reportElement x="69" y="306" width="117" height="20" uuid="a91d6053-8f3b-46b8-a8b5-1cb987eb7882"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="69" y="326" width="117" height="20" uuid="815e4b03-70fb-41eb-9cc4-0f9e405d8110"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="305" width="186" height="1" uuid="2f12f087-e6a1-4618-a50d-9a18b89df3e1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="391" width="186" height="1" uuid="0b7119ec-3463-426a-aa34-680fc9ceee70"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="8" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="8" splitType="Stretch"/>
+	</detail>
+</jasperReport>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="226" pageHeight="652" columnWidth="186" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="76a7d18b-eaab-46cf-b868-1ec85e43ad45">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="13"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM patient INNER JOIN results ON patient.patientno = results.channelno INNER JOIN pharmacy ON patient.patientno = pharmacy.channelno INNER JOIN sales ON patient.patientno = sales.patientno]]>
+	</queryString>
+	<field name="i" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patientno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patientname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bpressure" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="weight" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="phone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="channelno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="doctorname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="testtype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="testcost" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="labresults" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="results1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="results2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="results3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="results4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="prescription" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="doctorsremarks" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="diseasetype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drugname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drugcode" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sellprice" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drugname1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sellprice1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drugname2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sellprice2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="drugname3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sellprice3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bill" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="155" splitType="Stretch">
+			<staticText>
+				<reportElement x="47" y="131" width="79" height="20" uuid="024f9a27-f433-4210-8c23-253807d78f8d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prescription]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="20" width="166" height="20" uuid="7ed091d0-8f1c-4fe3-a329-7d001ccbce92"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HANNEX MEDICAL CLINIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="111" width="138" height="20" uuid="464a0b9e-f233-4666-8039-b40da7c896c9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[hannexmosoo@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="95" width="166" height="16" uuid="e75a6129-0075-4f9a-bce9-18d17480fa3c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEL: 0720085814 / 0735015592]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="75" width="174" height="20" uuid="b6756700-b899-492e-86dd-bf14da811b83"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Family planning and minor surgery]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="186" height="15" uuid="a63430c4-f0d6-41d4-ba48-e2bfefa0916e"/>
+				<textElement>
+					<font size="8" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[HOME GROUND BUILDING NEXT TO MALUGEI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="55" width="152" height="20" uuid="34176076-9c14-46c6-9e54-f6ebb1aef2df"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Consultation,laboratory,Dental]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="151" width="186" height="1" uuid="dba452a1-11b4-4f38-b623-1d2f7ef46468"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="453" splitType="Stretch">
+			<textField>
+				<reportElement x="58" y="10" width="128" height="20" uuid="b3db1827-624a-44f5-8b25-25a2f1a7a244"/>
+				<textFieldExpression><![CDATA[$F{patientname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="58" y="30" width="128" height="20" uuid="5fa72346-9eda-47f1-8245-cbb664acf4db"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="58" y="50" width="128" height="20" uuid="f75254ed-7d10-498b-94ed-9c583060c898"/>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="58" y="70" width="128" height="20" uuid="956bf9d0-528f-41f4-9d1a-d76b2a75ce71"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="90" width="186" height="1" uuid="c60520dd-d994-4c68-9e5c-e9fa031203cc"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="50" width="58" height="20" uuid="18d19555-bd69-4411-80a7-3a92735a5a52"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="58" height="20" uuid="4c2146ff-a3f7-402d-8a20-073a13d37a7d"/>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="58" height="20" uuid="9c99426c-cf98-477a-8f2e-b478b7e161e7"/>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="10" width="58" height="20" uuid="79c1bd7e-9b98-4ad3-8733-2e5d0cc81aff"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="101" width="117" height="20" uuid="6a54f5f3-b427-4f2f-818a-b445ad3a28b9"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Test type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="117" y="101" width="69" height="20" uuid="5fb35ba7-681e-4532-aa93-0bb7ea54742b"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Test cost]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="121" width="117" height="20" uuid="b099fead-81d6-4468-81be-b1d3c793b633"/>
+				<textFieldExpression><![CDATA[$F{testtype}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="117" y="121" width="69" height="20" uuid="eeffcd26-5ccf-4a9d-9db6-24191014fe1f"/>
+				<textFieldExpression><![CDATA[$F{testcost}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="141" width="117" height="20" uuid="aea24326-6158-4307-83f2-9f1e54d24d89"/>
+				<textFieldExpression><![CDATA[$F{type1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="117" y="141" width="69" height="20" uuid="460dad83-2b15-4d83-b330-a46ffbe0bfdc"/>
+				<textFieldExpression><![CDATA[$F{cost1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="161" width="117" height="20" uuid="8047f24d-bb0b-4884-a454-3ccb1c1258ea"/>
+				<textFieldExpression><![CDATA[$F{type2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="117" y="161" width="69" height="20" uuid="51f317d0-2d41-442b-b673-da82f50f4f74"/>
+				<textFieldExpression><![CDATA[$F{cost2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="181" width="117" height="20" uuid="71af8943-f0ee-455e-8a06-e146edfb69ec"/>
+				<textFieldExpression><![CDATA[$F{type3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="117" y="181" width="69" height="20" uuid="0079b5e1-054a-45e7-a2d4-71e990ea8a18"/>
+				<textFieldExpression><![CDATA[$F{cost3}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="200" width="186" height="1" uuid="48965f74-019f-4a3b-af1f-1e194698616e"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="66" y="251" width="118" height="20" uuid="749dc7cc-d874-4170-8f15-28d1fced9ed3"/>
+				<textFieldExpression><![CDATA[$F{prescription}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="68" y="211" width="118" height="20" uuid="65fc795a-2600-4747-bc57-0bbd81fcf239"/>
+				<textFieldExpression><![CDATA[$F{diseasetype}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="68" y="231" width="118" height="20" uuid="b1334dbc-f543-4635-a7f2-a8b57c1e188c"/>
+				<textFieldExpression><![CDATA[$F{cost}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="251" width="68" height="20" uuid="d90aed2e-e1d4-4343-a063-55b025e2aff3"/>
+				<text><![CDATA[Prescription]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="211" width="68" height="20" uuid="682f59ce-4291-4e6d-ac2d-640d1e94b93f"/>
+				<text><![CDATA[Disease ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="231" width="68" height="20" uuid="625e5fbb-0eba-4653-9548-9814034d7abf"/>
+				<text><![CDATA[Consultation]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="271" width="186" height="1" uuid="8710f4dc-ea53-4387-9e7b-d213a5449992"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField pattern="h.mm.ss a">
+				<reportElement positionType="Float" x="46" y="292" width="138" height="20" uuid="4020b1ab-61e8-4fa5-96d7-7cca58baf462"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement positionType="Float" x="58" y="272" width="128" height="20" uuid="4e18b990-2b4e-485e-8fd5-bd65738c0f39"/>
+				<textElement>
+					<font isStrikeThrough="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="46" y="323" width="101" height="20" uuid="3a30cd72-c336-4c39-83bd-928a31f5fc9a"/>
+				<textElement>
+					<font size="14" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Get well soon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="383" width="186" height="20" uuid="53171d4e-4a48-44d3-bb37-533f60c0563b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[& Outpatient services, Maternity ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="363" width="186" height="20" uuid="cea18e9f-e855-4a25-a03e-1f0e40683a1a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Antenatal clinic,Child Health,Inpatient]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="22" y="343" width="147" height="20" uuid="9f1c9228-0472-4962-a902-1ba52548d597"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SERVICES OFFERED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="402" width="186" height="20" uuid="cdc133fd-b2d9-4ee0-946f-18f04c959031"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[& Ultra-sound services]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="4" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="4" splitType="Stretch"/>
+	</detail>
+</jasperReport>
